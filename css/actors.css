@@ -1,0 +1,112 @@
+/*############Include a local font###########*/
+@font-face {
+	font-family: 'pricedown bl';
+	src: url("../font/pricedownbl.ttf");
+}
+body{
+	background-color: black;
+	background-image: url(../images/mainactors.png);
+	background-size: cover;
+
+}
+nav a{
+	padding: 5px;
+	font-weight: normal;
+}
+nav a:hover{
+	background-color: white;
+	color: black;
+}
+*{
+	font-family: georgia;
+	text-decoration: none;
+	color: white;
+	padding: 0;
+	margin: 0;
+}
+
+nav{
+	display: flex;
+	border-radius: 0 0 10px 10px;
+	width: 80%;
+	margin: 0 10%;
+	color: black;
+	height: 5%;
+	justify-content: space-evenly;
+}
+/*############## actors ##########*/
+#pictures{
+	display: flex;
+	justify-content: center;
+}
+#back{
+	text-align: right;
+	flex: 1;
+}
+#picture{
+	flex:2;
+}
+#forward{
+	text-align: justify;
+	flex: 1
+}
+img{
+	width: 400px;
+	height: 400px;
+}
+@keyframes fade {
+  0% {
+  	opacity: .3
+  } 
+  100% {
+  	opacity: 1
+  }
+}
+.ani{
+	animation: fade 3s ease;
+}
+
+button{
+	background-color: Transparent;
+    outline:none;
+	font-size: 200px;
+	width: 100%;
+	height: 100%;
+}
+
+#description{
+	font-family: geogia;
+	width: 500px;
+	margin: 0 auto;
+	background-color: black;
+	opacity: 0.8;
+}
+#title{
+	display: flex;
+	justify-content: center;
+	padding: 30px;
+}
+
+/*##########episodes/*#######
+*/
+
+#mainepisodes{
+	width: 500px;
+	margin: 0 auto;
+}
+main h1{
+	margin: 20px 0px;
+	text-align: center;
+}
+table th,table h2{
+	background-color: white;
+	color: black;
+}
+main table{
+	width: 100%;
+	background-color: black;
+	opacity: .8
+}
+table{
+	box-shadow: 10px 10px 10px black;
+}

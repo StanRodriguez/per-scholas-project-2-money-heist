@@ -1,0 +1,86 @@
+ /*############Include a local font###########*/
+@font-face {
+	font-family: 'pricedown bl';
+	src: url("../font/pricedownbl.ttf");
+}
+*{
+	font-family: georgia;
+	text-decoration: none;
+	color: white;
+	padding: 0;
+	margin: 0;
+}
+#wrapper{
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	background-image: url(../images/main.jpg);
+	background-size: cover;
+}
+nav a{
+	padding: 5px;
+	font-weight: normal;
+}
+nav a:hover{
+	background-color: white;
+	color: black;
+}
+nav{
+	display: flex;
+	position: fixed;
+	border-radius: 0 0 10px 10px;
+	width: 80%;
+	margin: 0 10%;
+	color: black;
+	height: 5%;
+	justify-content: space-evenly;
+}
+#video{
+	flex: 2;
+}
+#banner{
+	animation: 2s bannerGlowing infinite alternate;
+	z-index: 99;
+	cursor: pointer;
+}
+h1,h6,span{
+	font-family: 'pricedown bl';
+	font-weight: lighter;
+}
+aside{
+	margin: 20% auto;
+	text-align: right;
+	flex: 1;
+	color: white;
+	font-size: 500%;
+	animation: ease-in-out bannerAppear 2s;
+}
+@keyframes bannerGlowing{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes bannerAppear{
+	0%{
+		margin: 0 0;
+		opacity: 0;
+	}
+	100%{
+		margin: 20% auto; 
+		opacity: 1;
+	}
+}
+#n{
+	background-color: red;
+	color: black;
+}
+#trailer{
+	display: none;
+}
+
+
+
